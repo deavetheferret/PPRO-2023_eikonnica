@@ -6,8 +6,9 @@
 
 html {
   font-size: 18px;
-  // overscroll-behavior-y: none;
-  // overflow-y: scroll;
+  user-select: none;
+  overscroll-behavior-y: none;
+  overflow-y: scroll;
 }
 
 body {
