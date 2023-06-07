@@ -1,5 +1,21 @@
+@font-face {
+  font-family: "Teletactile", serif;
+  src: url(../fonts/teletactile.woff2);
+}
+@font-face {
+  font-family: "Stretch Pro", sans-serif;
+  src: url(../fonts/stretch-pro.woff2);
+}
+
+$color-main: #0d0d0d;
+$color-second: #f4f4f4;
+$color-enhanced: #beff00;
+$font-title: "Stretch Pro", sans-serif;
+$font-text: "Teletactile", serif;
+
 @import "base";
 @import "layout";
 @import "modules/banner";
 @import "modules/header";
 @import "modules/welcome-cube";
+@import "modules/cursor";

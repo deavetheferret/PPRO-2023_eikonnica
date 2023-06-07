@@ -7,28 +7,29 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
+    <div class="cursor" id="cursor"></div>
     <div class="banner-rail">
+      <div class="banner-line"></div>
       <div class="banner-roller">
-        <div class="banner-line"></div>
         <span
           >billetterie ouverte # reservez maintenant # billetterie ouverte #
           reservez maintenant # billetterie ouverte # reservez maintenant #
           billetterie ouverte # reservez maintenant # billetterie ouverte #
-          reservez maintenant # billetterie ouverte # reservez maintenant #
-          billetterie ouverte # reservez maintenant # billetterie ouverte #
-          reservez maintenant #
+          reservez maintenant # billetterie ouverte # billet
         </span>
-        <div class="banner-line"></div>
       </div>
+      <div class="banner-line"></div>
       <div class="banner-shop-container">
-        <a href="#">></a>
+        <a href="#" class="interactable">></a>
       </div>
     </div>
     <div class="welcome">
-      <div class="cube-container">
-        <div class="cube-face--back"></div>
-        <div class="cube-face--front">
-          <h1><img src="img/eikonica-white.png" alt="logo de eikonica" /></h1>
+      <div class="cube-container scene">
+        <div class="cube">
+          <div class="cube-face cube-face--back"></div>
+          <div class="cube-face cube-face--front">
+            <img src="img/eikonica-white.png" alt="logo de eikonica" />
+          </div>
         </div>
       </div>
       <div class="min-card-call">
@@ -36,25 +37,27 @@
           >psst <br />
           c'est en bas que ca se passe</span
         >
-        <img src="#" alt="icon de flèche" />
+        <a href="#intro" class="interactable">
+          <img src="img/arrow-icon.webp" alt="icon de flèche" />
+        </a>
       </div>
     </div>
     <header>
       <img src="img/eikonica.svg" alt="logo de eikonica" />
       <nav>
-        <a href="#prog">programme</a>
-        <a href="#expo">expositions</a>
-        <a href="#info">infos pratiques</a>
-        <a href="#contact">partenaires</a>
-        <a href="#contact">contact</a>
+        <a href="#prog" class="interactable">programme</a>
+        <a href="#expo" class="interactable">expositions</a>
+        <a href="#info" class="interactable">infos pratiques</a>
+        <a href="#contact" class="interactable">partenaires</a>
+        <a href="#contact" class="interactable">contact</a>
       </nav>
       <div class="lang-container">
-        <a href="#">fr</a>
-        <a href="#">de</a>
+        <a href="#" class="interactable">fr</a>
+        <a href="#" class="interactable">de</a>
       </div>
     </header>
     <main>
-      <section class="intro">
+      <section class="intro" id="intro">
         <div class="intro-text top-text">
           <p>
             participez a la premiere edition du eikonica festival du 13 au 15

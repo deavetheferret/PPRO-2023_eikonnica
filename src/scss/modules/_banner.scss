@@ -1,12 +1,49 @@
 .banner-rail {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $color-enhanced;
+  position: relative;
+  z-index: 100;
+  .banner-line {
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+    background-color: $color-main;
+  }
   .banner-roller {
-    .banner-line {
-    }
+    background-color: $color-enhanced;
+    animation: banner-roll 10s linear infinite;
     span {
+      font-family: $font-title;
+      text-transform: uppercase;
+      white-space: nowrap;
+      font-size: 41px;
     }
   }
   .banner-shop-container {
+    position: absolute;
+    background-color: $color-second;
+    right: 0;
+    top: 0;
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: solid 2px $color-main;
     a {
+      font-size: 60px;
+      font-family: $font-text;
+      text-decoration: none;
     }
+  }
+}
+
+@keyframes banner-roll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }

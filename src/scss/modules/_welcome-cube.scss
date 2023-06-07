@@ -1,0 +1,46 @@
+.welcome {
+  background-color: $color-main;
+  height: 100vh;
+  overflow: hidden;
+  .cube-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    // border: dotted violet 1px;
+    .cube-face {
+      position: absolute;
+      transform-origin: center;
+    }
+    .cube-face--back {
+      border: solid 2px $color-enhanced;
+      width: 50%;
+      height: 50%;
+      transform: translate(-150%, -180%);
+    }
+    .cube-face--front {
+      margin: auto;
+      width: 80%;
+      z-index: 10;
+      // border: dotted violet 1px;
+      transform: translate(-20%, -10%);
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .min-card-call {
+    position: absolute;
+    bottom: 5%;
+    left: 38%;
+    transform-origin: center;
+    color: $color-second;
+    font-family: $font-text;
+    text-align: center;
+    user-select: none;
+    a {
+      display: block;
+      width: fit-content;
+      margin: auto;
+    }
+  }
+}

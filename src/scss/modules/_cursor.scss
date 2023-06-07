@@ -1,0 +1,17 @@
+.cursor {
+  border-radius: 50%;
+  position: fixed;
+  z-index: 10000;
+  height: 60px;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.08s, height 0.08s, background-color 0.08s;
+  transition-timing-function: ease;
+  border: solid 2px $color-enhanced;
+  &.focus-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: $color-enhanced;
+  }
+}
