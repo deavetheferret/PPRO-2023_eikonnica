@@ -33,3 +33,41 @@ interactables.forEach((interactable) => {
     cursor.classList.remove("focus-cursor");
   });
 });
+
+const randomGlyphs = [
+  "@",
+  "#",
+  "$",
+  "%",
+  "&",
+  "*",
+  "+",
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+]; // I know that there's some better way to pick some glyphs but it was simplier in my case
+
+function generateRandomGlyphs() {
+  let result = "";
+  for (let i = 0; i < 4; i++) {
+    const randomIndex = Math.floor(Math.random() * randomGlyphs.length);
+    result += randomGlyphs[randomIndex];
+  }
+
+  const element = document.querySelector(".randomGlyphs");
+  if (element) {
+    element.textContent = result;
+    console.log("it worked");
+  } else {
+    console.log("it doesn't worked");
+  }
+}
+
+setInterval(generateRandomGlyphs, 100);
