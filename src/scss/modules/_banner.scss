@@ -4,6 +4,7 @@
   background-color: $color-enhanced;
   position: relative;
   z-index: 100;
+  color: $color-main;
   .banner-line {
     height: 2px;
     width: 100%;
@@ -12,7 +13,7 @@
   }
   .banner-roller {
     background-color: $color-enhanced;
-    animation: banner-roll 10s linear infinite;
+    animation: banner-roll 50s linear infinite;
     span {
       font-family: $font-title;
       text-transform: uppercase;
