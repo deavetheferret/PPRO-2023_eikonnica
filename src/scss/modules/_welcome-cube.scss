@@ -6,7 +6,43 @@
     position: relative;
     height: 100%;
     width: 100%;
-    // border: dotted violet 1px;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      .path-top-right,
+      .path-bottom-right,
+      .path-top-left,
+      .path-bottom-left {
+        stroke: $color-enhanced;
+      }
+    }
+    // set the corners of the canva
+    [class^="start-"] {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      background-color: violet;
+    }
+    .start-top-left,
+    .start-top-right {
+      top: 0;
+    }
+    .start-bottom-left,
+    .start-bottom-right {
+      bottom: 0;
+    }
+    .start-top-left,
+    .start-bottom-left {
+      left: 0;
+    }
+    .start-top-right,
+    .start-bottom-right {
+      right: 0;
+    }
+
+    // create the cube
     .cube-face {
       position: absolute;
       transform-origin: center;
@@ -16,6 +52,30 @@
       width: 50%;
       height: 50%;
       transform: translate(-150%, -180%);
+
+      // set the corner inside the moving square
+      [class^="end-"] {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: lightcoral;
+      }
+      .end-top-left,
+      .end-top-right {
+        top: 0;
+      }
+      .end-bottom-left,
+      .end-bottom-right {
+        bottom: 0;
+      }
+      .end-top-left,
+      .end-bottom-left {
+        left: 0;
+      }
+      .end-top-right,
+      .end-bottom-right {
+        right: 0;
+      }
     }
     .cube-face--front {
       margin: auto;
@@ -31,7 +91,7 @@
   .min-card-call {
     position: absolute;
     bottom: 5%;
-    left: 38%;
+    left: 35%;
     transform-origin: center;
     color: $color-second;
     font-family: $font-text;
