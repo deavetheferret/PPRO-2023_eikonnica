@@ -6,4 +6,18 @@
   .section-content {
     padding: 90px 0;
   }
+  &.prog {
+    .collapser {
+      margin: 40px 0;
+      .collapser-title {
+        margin: 0 0 40px;
+        span {
+          font-size: 36px;
+        }
+      }
+      .collapser-row {
+        margin: 18px 0;
+      }
+    }
+  }
 }
