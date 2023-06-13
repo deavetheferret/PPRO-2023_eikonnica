@@ -10,7 +10,7 @@
 $color-main: #001019;
 $color-second: #fbfaf5;
 $color-enhanced: #eaff01;
-$color-enhanced: #663de4;
+// $color-enhanced: #663de4;
 $font-title: "Stretch Pro", sans-serif;
 $font-text: "Teletactile", serif;
 
@@ -22,4 +22,5 @@ $font-text: "Teletactile", serif;
 @import "modules/cursor";
 @import "modules/section";
 @import "modules/intro";
+@import "modules/footer";
 @import "bootstrap/scss/bootstrap-grid";

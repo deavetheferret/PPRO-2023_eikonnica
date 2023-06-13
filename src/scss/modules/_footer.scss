@@ -1,0 +1,34 @@
+footer {
+  padding-bottom: 68px;
+  h2 {
+    width: fit-content;
+    margin: 85px 0 45px;
+    img {
+      width: auto;
+    }
+  }
+  .col-6 {
+    .col-12 {
+      margin-bottom: 30px;
+    }
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .parten {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-3.offset-3 {
+    text-align: end;
+    span {
+      font-size: 14px;
+    }
+  }
+}
