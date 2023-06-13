@@ -20,10 +20,10 @@
     }
     // set the corners of the canva
     [class^="start-"] {
-      width: 10px;
-      height: 10px;
+      width: 1px;
+      height: 1px;
       position: absolute;
-      background-color: violet;
+      // background-color: violet;
     }
     .start-top-left,
     .start-top-right {
@@ -55,10 +55,10 @@
 
       // set the corner inside the moving square
       [class^="end-"] {
-        width: 10px;
-        height: 10px;
+        width: 1px;
+        height: 1px;
         position: absolute;
-        background-color: lightcoral;
+        // background-color: lightcoral;
       }
       .end-top-left,
       .end-top-right {

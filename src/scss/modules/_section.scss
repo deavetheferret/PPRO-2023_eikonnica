@@ -84,6 +84,43 @@
       background-color: $color-second;
       color: $color-main;
     }
+    .disclaimer {
+      text-align: center;
+      margin: 40px 0 0;
+    }
+    .banner-rail {
+      .banner-roller {
+        animation: banner-roll 0 linear;
+        .col-12 {
+          display: flex;
+          justify-content: space-between;
+        }
+        span {
+          font-family: $font-text;
+          font-size: 21px;
+        }
+      }
+    }
+    .others {
+      background-color: $color-second;
+      color: $color-main;
+      .col-6 {
+        margin: 90px 0;
+        h3 {
+          margin-bottom: 30px;
+        }
+        a {
+          text-decoration: none;
+          &.borderless-button:hover {
+            color: $color-enhanced;
+          }
+          &.button:hover {
+            background-color: $color-main;
+            color: $color-second;
+          }
+        }
+      }
+    }
   }
   .button {
     border: solid 2px;
