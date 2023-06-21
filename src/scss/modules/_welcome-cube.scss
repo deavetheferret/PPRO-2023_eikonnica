@@ -11,19 +11,16 @@
       position: absolute;
       top: 0;
       left: 0;
-      .path-top-right,
-      .path-bottom-right,
-      .path-top-left,
-      .path-bottom-left {
+      [class^="path-"] {
         stroke: $color-enhanced;
       }
     }
+
     // set the corners of the canva
     [class^="start-"] {
       width: 1px;
       height: 1px;
       position: absolute;
-      // background-color: violet;
     }
     .start-top-left,
     .start-top-right {
@@ -58,7 +55,6 @@
         width: 1px;
         height: 1px;
         position: absolute;
-        // background-color: lightcoral;
       }
       .end-top-left,
       .end-top-right {
@@ -77,11 +73,12 @@
         right: 0;
       }
     }
+
+    // create the front face of the cube ( the text or logo )
     .cube-face--front {
       margin: auto;
       width: 80%;
       z-index: 10;
-      // border: dotted violet 1px;
       transform: translate(-20%, -10%);
       img {
         width: 100%;
@@ -91,8 +88,9 @@
   .min-card-call {
     position: absolute;
     bottom: 5%;
-    left: 35%;
+    left: 50%;
     transform-origin: center;
+    transform: translateX(-50%);
     color: $color-second;
     font-family: $font-text;
     text-align: center;
