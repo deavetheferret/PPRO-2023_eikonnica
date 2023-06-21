@@ -41,6 +41,6 @@ All of these criterias have been learned and understood.
 Here are more links to my work.
 
 ```
-[My behance](https://www.behance.net/franoisdevantay "personal behance")
-[ELADE/ studio on youtube](https://www.youtube.com/channel/@ELADEstudioOff "youtube of elade/studio")
+<a href="https://www.behance.net/franoisdevantay" target="_blank">My personal Behance</a>
+<a href="https://www.youtube.com/channel/@ELADEstudioOff" target="_blank">Elade/ studio youtube channel</a>
 ```
