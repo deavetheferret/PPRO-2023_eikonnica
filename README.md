@@ -40,5 +40,5 @@ All of these criterias have been learned and understood.
 
 Here are more links to my work.
 
-<a href="https://www.behance.net/franoisdevantay" target="_blank">My personal Behance</a>
-<a href="https://www.youtube.com/channel/@ELADEstudioOff" target="_blank">Elade/ studio youtube channel</a>
+<a href="https://www.behance.net/franksdev" target="_blank">My personal Behance</a>
+<a href="https://www.youtube.com/@ELADEstudioOff" target="_blank">Elade/ studio youtube channel</a>
